@@ -1,5 +1,11 @@
 {% extends "base.html" %}
 
 {% block content %}
-    <h1>TODO: Complete Part 1 and Part 4</h1>
+    <h1>Welcome, {{name}}</h1>
+    <h1>Today is {{today}}</h1>
+
+    <!--  part 4 now -->
+    <p>name in uppercase: {{name | upper}}</p>
+    <p>name in title case: {{name | title}}</p>
+    <p>a number rounded to 2 decimal places: {{number | round(2)}}</p>
 {% endblock %}
